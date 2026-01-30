@@ -1,4 +1,4 @@
 package repositories;
 
-public class PedidoRepository {
+public class PedidoRepositoryTXT {
 }
