@@ -1,17 +1,15 @@
 package entities;
 
-import java.util.UUID;
+public class Cliente{
 
-public class Cliente {
-
-    private UUID id;
+    private Integer id;
     private String nome;
 
-    public UUID getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(UUID id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

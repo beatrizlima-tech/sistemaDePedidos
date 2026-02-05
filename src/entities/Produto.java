@@ -1,18 +1,16 @@
 package entities;
 
-import java.util.UUID;
+public class Produto{
 
-public class Produto {
-
-    private UUID id;
+    private Integer id;
     private String nome;
     private Double preco;
 
-    public UUID getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(UUID id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

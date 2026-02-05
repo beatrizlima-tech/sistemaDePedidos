@@ -1,21 +1,24 @@
 package entities;
 
+
+import enums.StatusPedido;
+
 import java.time.LocalDate;
-import java.util.UUID;
 import java.util.List;
 
-public class Pedido {
+public class Pedido{
 
-    private UUID id;
+    private Integer id;
     private LocalDate data;
-    private String nome;
+    private Cliente cliente;
     private List<Produto> produtos;
+    private StatusPedido status;
 
-    public UUID getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(UUID id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -27,12 +30,12 @@ public class Pedido {
         this.data = data;
     }
 
-    public String getNome() {
-        return nome;
+    public Cliente getCliente() {
+        return cliente;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
     }
 
     public List<Produto> getProdutos() {
@@ -41,5 +44,13 @@ public class Pedido {
 
     public void setProdutos(List<Produto> produtos) {
         this.produtos = produtos;
+    }
+
+    public StatusPedido getStatus() {
+        return status;
+    }
+
+    public void setStatus(StatusPedido status) {
+        this.status = status;
     }
 }

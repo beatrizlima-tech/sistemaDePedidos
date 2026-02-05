@@ -8,22 +8,28 @@ Sistema simples de gestão de pedidos, contendo as entidades Cliente, Produto e 
 O projeto foi desenvolvido como exercício acadêmico, com foco em:
 - Estruturação de classes
 - Organização em pacotes
+- Encapsulamento
 - Uso de enum
+- Interface e polimorfismo
 - Boas práticas de POO
 
 ## Estrutura do Projeto
 Organização dos pacotes:
 - entities
 - enums
+- interfaces
 - repositories
 - controllers
 
 A classe Main é responsável pela execução do sistema.
 
-## Status do Projeto
-Em desenvolvimento.
+## Funcionalidades
+- Cadastro de pedido com cliente e produtos
+- Controle de status do pedido (ABERTO, PAGO, CANCELADO)
+- Exportação de pedidos nos formatos TXT e XML, utilizando polimorfismo
 
-Funcionalidades de exportação de pedidos em TXT e XML estão em fase de implementação.
+## Status do Projeto
+Concluído para fins acadêmicos.
 
 ## Tecnologias Utilizadas
 - Java
@@ -32,3 +38,4 @@ Funcionalidades de exportação de pedidos em TXT e XML estão em fase de implem
 
 ## Autora
 Beatriz Lima
+
