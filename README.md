@@ -1,24 +1,34 @@
 # 🛒 Sistema de Pedidos
 
-Projeto desenvolvido em Java com foco na aplicação de conceitos fundamentais de Programação Orientada a Objetos (POO), utilizando interfaces, polimorfismo e manipulação de arquivos para gerenciamento e exportação de pedidos.
+![Java](https://img.shields.io/badge/Java-21-red?style=for-the-badge\&logo=openjdk)
+![POO](https://img.shields.io/badge/POO-Programação_Orientada_a_Objetos-blue?style=for-the-badge)
+![XML](https://img.shields.io/badge/XML-Exportação-orange?style=for-the-badge)
+![TXT](https://img.shields.io/badge/TXT-Arquivos-lightgrey?style=for-the-badge)
+![License](https://img.shields.io/badge/license-MIT-lightgrey?style=for-the-badge)
 
-## 🚀 Sobre o Projeto
+---
 
-A aplicação permite criar pedidos contendo produtos e exportar as informações em diferentes formatos (TXT ou XML), demonstrando a utilização de boas práticas de desenvolvimento orientado a objetos.
+# 📌 Sobre o projeto
 
-O projeto foi desenvolvido com o objetivo de fortalecer conhecimentos em arquitetura orientada a objetos e padrões de abstração frequentemente utilizados em aplicações corporativas.
+O **Sistema de Pedidos** é uma aplicação desenvolvida em **Java** para gerenciamento de pedidos e exportação de dados em diferentes formatos.
 
-## ✨ Funcionalidades
+O projeto foi criado para consolidar conceitos fundamentais de **Programação Orientada a Objetos**, aplicando interfaces, polimorfismo, enumerações e manipulação de arquivos, utilizando uma arquitetura organizada e de fácil manutenção.
+
+---
+
+# 🚀 Funcionalidades
 
 * Cadastro de pedidos
 * Cadastro de produtos
 * Associação de múltiplos produtos ao pedido
 * Controle de status do pedido
-* Exportação dos dados em formato TXT
-* Exportação dos dados em formato XML
+* Exportação em arquivo TXT
+* Exportação em arquivo XML
 * Tratamento de exceções durante o processamento
 
-## 🛠️ Tecnologias Utilizadas
+---
+
+# 🧱 Tecnologias Utilizadas
 
 * Java
 * Programação Orientada a Objetos (POO)
@@ -27,10 +37,13 @@ O projeto foi desenvolvido com o objetivo de fortalecer conhecimentos em arquite
 * XML
 * TXT
 
-## 🏗️ Estrutura do Projeto
+---
+
+# 🏗️ Estrutura do Projeto
 
 ```text
 src/
+
 ├── controllers
 ├── entities
 ├── enums
@@ -38,57 +51,98 @@ src/
 └── repositories
 ```
 
-## 🧠 Conceitos Aplicados
+---
 
-### Encapsulamento
+# 📊 Arquitetura
 
-Utilização de atributos privados com métodos getters e setters para controle dos dados.
+```text
+Usuário
+    │
+    ▼
+Controller
+    │
+    ▼
+Entity
+    │
+    ▼
+Repository (Interface)
+   ┌───────────────┐
+   ▼               ▼
+TXT             XML
+```
 
-### Enumerações
+---
 
-Implementação do enum `StatusPedido` para representar os estados do pedido.
+# 📚 Conceitos Aplicados
 
-### Interfaces
+* Programação Orientada a Objetos
+* Encapsulamento
+* Polimorfismo
+* Interfaces
+* Enumerações
+* Manipulação de Arquivos
+* Separação de Responsabilidades
+* Geração de arquivos TXT
+* Geração de arquivos XML
 
-Definição do contrato de exportação através da interface `PedidoRepository`.
+---
 
-### Polimorfismo
+# ▶️ Como Executar
 
-Implementação de diferentes estratégias de exportação utilizando:
-
-* PedidoRepositoryTXT
-* PedidoRepositoryXML
-
-### Manipulação de Arquivos
-
-Geração automática de arquivos contendo os dados do pedido de acordo com o formato escolhido.
-
-## ▶️ Como Executar
-
-### Pré-requisitos
+## Pré-requisitos
 
 * Java JDK 17 ou superior
-* IDE Java (Eclipse, IntelliJ IDEA ou VS Code)
+* IntelliJ IDEA, Eclipse ou VS Code
 
-### Clonar o Projeto
+## 1. Clone o repositório
 
 ```bash
 git clone https://github.com/beatrizlima-tech/sistemaDePedidos.git
 ```
 
-### Executar
+## 2. Abra o projeto
 
-Abra o projeto em sua IDE Java preferida e execute a classe principal.
+Importe o projeto em sua IDE Java.
 
-Durante a execução, informe os dados solicitados pelo sistema e escolha o formato de exportação desejado.
+## 3. Execute a aplicação
 
-## 📚 Objetivo
+Execute a classe principal.
 
-Este projeto foi desenvolvido para praticar conceitos essenciais utilizados no desenvolvimento de software com Java, especialmente Programação Orientada a Objetos, abstração, polimorfismo, interfaces e persistência de dados em arquivos.
+Durante a execução será possível escolher:
 
-## 👩‍💻 Autora
+* Exportação em TXT
+* Exportação em XML
 
-Beatriz Lima de Oliveira
+---
 
-GitHub:
+# 📁 Arquivos Gerados
+
+Os pedidos podem ser exportados automaticamente para:
+
+* `pedido_UUID.txt`
+* `pedido_UUID.xml`
+
+Cada arquivo contém todas as informações do pedido, incluindo produtos, quantidades e status.
+
+---
+
+# 📌 Melhorias Futuras
+
+* Cadastro dinâmico de produtos
+* Persistência em banco de dados
+* Interface gráfica completa
+* Integração com APIs REST
+* Exportação em JSON
+* Geração de PDF
+
+---
+
+# 👩‍💻 Autora
+
+Desenvolvido por **Beatriz Lima**
+
+🔗 GitHub
 https://github.com/beatrizlima-tech
+
+💼 LinkedIn
+https://www.linkedin.com/in/beatrizlima-tech
